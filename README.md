@@ -18,6 +18,6 @@ https://cdn.sparkfun.com/assets/8/4/c/d/6/Weather_Sensor_Assembly_Updated.pdf
 
 # Original PCB
 
-![Original front](Original PCB front.jpg?raw=true "Front")
+![Original front](OriginalPCBFront.jpg?raw=true "Front")
 
-![Original back](Original PCB back.jpg?raw=true "Back")
+![Original back](OriginalPCBBack.jpg?raw=true "Back")

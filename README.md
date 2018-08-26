@@ -15,3 +15,9 @@ https://www.robotics.org.za/WH-SP-WS02
 https://www.sparkfun.com/products/8942
 
 https://cdn.sparkfun.com/assets/8/4/c/d/6/Weather_Sensor_Assembly_Updated.pdf
+
+# Original PCB
+
+![Original front](Original PCB front.jpg?raw=true "Front")
+
+![Original back](Original PCB back.jpg?raw=true "Back")

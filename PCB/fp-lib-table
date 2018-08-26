@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name drawn_by_jpmeijers)(type KiCad)(uri "$(KIPRJMOD)/libraries/drawn_by_jpmeijers.pretty")(options "")(descr ""))
+  (lib (name components)(type KiCad)(uri "$(KIPRJMOD)/libraries/w-dee/components.pretty")(options "")(descr ""))
+)

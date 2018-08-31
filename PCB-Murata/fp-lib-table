@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name drawn_by_jpmeijers)(type KiCad)(uri "$(KIPRJMOD)/libraries/drawn_by_jpmeijers.pretty")(options "")(descr ""))
+  (lib (name components)(type KiCad)(uri "$(KIPRJMOD)/libraries/w-dee/components.pretty")(options "")(descr ""))
+  (lib (name CMWX1ZZABZ-078)(type Legacy)(uri "$(KIPRJMOD)/libraries/CMWX1ZZABZ-078/CMWX1ZZABZ-078.mod")(options "")(descr ""))
+)

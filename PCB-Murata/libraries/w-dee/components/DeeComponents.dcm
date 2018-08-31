@@ -1,0 +1,46 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74HC595
+D 8 bits serial in // out Shift Register 3 State Out
+K HCMOS SR 3State
+F 74xx/74HC595.pdf
+$ENDCMP
+#
+$CMP 74HC595-alt-vdd
+D 8 bits serial in // out Shift Register 3 State Out
+K HCMOS SR 3State
+F 74xx/74HC595.pdf
+$ENDCMP
+#
+$CMP 74LS595
+D 8 bits serial in // out Shift Register 3 State Out
+K TTL SR 3State
+$ENDCMP
+#
+$CMP 74LS596
+D 8 bits serial in // out Shift Register Open Collect.
+K HCMOS SR OpenCol
+$ENDCMP
+#
+$CMP COMMON_MODE_CHOKE
+D Transformer, single primary, single secondary
+K transformer coil magnet
+$ENDCMP
+#
+$CMP LED8x8
+D Generic 8x8 LED matrix
+K LED,Matrix
+$ENDCMP
+#
+$CMP NJU7223
+D Linear Regulator +3.3V
+K POWER REGUL
+$ENDCMP
+#
+$CMP TPIC6C595
+D 8 bits serial in // out Shift Register 3 State Out
+K HCMOS SR 3State
+F 74xx/74HC595.pdf
+$ENDCMP
+#
+#End Doc Library

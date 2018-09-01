@@ -1,0 +1,339 @@
+Cmp-Mod V01 Created by PcbNew   date = Sat 01 Sep 2018 11:20:44 SAST
+
+BeginCmp
+TimeStamp = 5B6B0372
+Path = /5B6AFCB7
+Reference = AE1;
+ValeurCmp = Antenna;
+IdModule  = drawn_by_jpmeijers:PCB_HELICAL_ANTENNA_868;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B6AF79D
+Path = /5B6AF612
+Reference = C7;
+ValeurCmp = 1pF;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B6AF7C5
+Path = /5B6AF6B3
+Reference = L1;
+ValeurCmp = 12nH;
+IdModule  = Inductors_SMD:L_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B6AF7CB
+Path = /5B6AF732
+Reference = L2;
+ValeurCmp = NA;
+IdModule  = Inductors_SMD:L_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B6AF7DF
+Path = /5B6AF33A
+Reference = U2;
+ValeurCmp = RFM95;
+IdModule  = drawn_by_jpmeijers:RFM95;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B831747
+Path = /5B712A84
+Reference = R1;
+ValeurCmp = 10k1;
+IdModule  = Resistors_SMD:R_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B83177A
+Path = /5B712AEF
+Reference = C1;
+ValeurCmp = 100n;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B83178B
+Path = /5B730949
+Reference = C2;
+ValeurCmp = 100n;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B83179C
+Path = /5B712E03
+Reference = C3;
+ValeurCmp = 100n;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B8317AD
+Path = /5B7317FB
+Reference = C6;
+ValeurCmp = 100n;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B8317BE
+Path = /5B7321E1
+Reference = C8;
+ValeurCmp = 22p;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B8317CF
+Path = /5B732240
+Reference = C9;
+ValeurCmp = 22p;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B8317E0
+Path = /5B832DC6
+Reference = C10;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B8317F1
+Path = /5B7326A0
+Reference = C12;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B831802
+Path = /5B732722
+Reference = C13;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B831813
+Path = /5B73277D
+Reference = C14;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B831824
+Path = /5B73282D
+Reference = C15;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B8318AE
+Path = /5B8329CA
+Reference = SW1;
+ValeurCmp = SW_Push;
+IdModule  = Buttons_Switches_SMD:SW_SPST_B3SL-1002P;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B8318F1
+Path = /5B730A8A
+Reference = U3;
+ValeurCmp = ATMEGA1284P-AU;
+IdModule  = Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B839354
+Path = /5B8393B6
+Reference = C5;
+ValeurCmp = 100n;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B839365
+Path = /5B83E4F7
+Reference = J11;
+ValeurCmp = INT2;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B83936B
+Path = /5B83CFC8
+Reference = J12;
+ValeurCmp = I2C;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B839371
+Path = /5B83A37C
+Reference = J13;
+ValeurCmp = UART;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B839471
+Path = /5B712D3C
+Reference = R2;
+ValeurCmp = 10k2;
+IdModule  = Resistors_SMD:R_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B839477
+Path = /5B712E56
+Reference = R3;
+ValeurCmp = 10k3;
+IdModule  = Resistors_SMD:R_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B83947D
+Path = /5B832B7A
+Reference = R4;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B839D7E
+Path = /5B6AD9CA
+Reference = J2;
+ValeurCmp = batt -;
+IdModule  = drawn_by_jpmeijers:BATTERY_TERMINAL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B839D89
+Path = /5B6ADA23
+Reference = J3;
+ValeurCmp = batt +;
+IdModule  = drawn_by_jpmeijers:BATTERY_TERMINAL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B881EC1
+Path = /5B732041
+Reference = Y1;
+ValeurCmp = 8MHz;
+IdModule  = Crystals:Crystal_SMD_SeikoEpson_FA238V-4pin_3.2x2.5mm_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B881FEE
+Path = /5B884D9C
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LEDs:LED_D3.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B881FF4
+Path = /5B884E23
+Reference = R5;
+ValeurCmp = 200?;
+IdModule  = Resistors_SMD:R_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B885130
+Path = /5B6BF707
+Reference = U1;
+ValeurCmp = BME280;
+IdModule  = components:BME280;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B88568E
+Path = /5B88768C
+Reference = J6;
+ValeurCmp = Conn_01x01;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B885693
+Path = /5B8876F5
+Reference = J7;
+ValeurCmp = Conn_01x01;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B885698
+Path = /5B88775A
+Reference = J8;
+ValeurCmp = Conn_01x01;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B88569D
+Path = /5B8877C1
+Reference = J9;
+ValeurCmp = Conn_01x01;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B8856A2
+Path = /5B88782C
+Reference = J10;
+ValeurCmp = Conn_01x01;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B8A4B16
+Path = /5B8A4CC9
+Reference = C11;
+ValeurCmp = 10uF;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B8A4C9F
+Path = /5B8A515F
+Reference = C4;
+ValeurCmp = 10uF;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B885689
+Path = /5B887629
+Reference = J5;
+ValeurCmp = Conn_01x01;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B6B0630
+Path = /5B6ADB89
+Reference = J4;
+ValeurCmp = RAIN;
+IdModule  = drawn_by_jpmeijers:SPARKFUN_RJ11-6;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B6B061A
+Path = /5B6ADACC
+Reference = J1;
+ValeurCmp = WIND;
+IdModule  = drawn_by_jpmeijers:SPARKFUN_RJ11-6;
+EndCmp
+
+EndListe

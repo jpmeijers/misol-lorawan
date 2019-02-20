@@ -1,6 +1,42 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:drawn_by_jpmeijers
+LIBS:bb-ch340t
+LIBS:DeeComponents
+LIBS:wroom-02
 LIBS:weerstasie-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +51,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L weerstasie-rescue:Conn_01x01 J2
+L Conn_01x01 J2
 U 1 1 5B6AD9CA
 P 3250 7100
 F 0 "J2" H 3250 7200 50  0000 C CNN
@@ -26,7 +62,7 @@ F 3 "" H 3250 7100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L weerstasie-rescue:Conn_01x01 J3
+L Conn_01x01 J3
 U 1 1 5B6ADA23
 P 4150 7100
 F 0 "J3" H 4150 7200 50  0000 C CNN
@@ -37,7 +73,7 @@ F 3 "" H 4150 7100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L weerstasie-rescue:RJ12 J1
+L RJ12 J1
 U 1 1 5B6ADACC
 P 3000 5200
 F 0 "J1" H 3200 5700 50  0000 C CNN
@@ -48,7 +84,7 @@ F 3 "" H 3000 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L weerstasie-rescue:RJ12 J4
+L RJ12 J4
 U 1 1 5B6ADB89
 P 4250 5200
 F 0 "J4" H 4450 5700 50  0000 C CNN
@@ -59,7 +95,7 @@ F 3 "" H 4250 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L drawn_by_jpmeijers:RFM95 U2
+L RFM95 U2
 U 1 1 5B6AF33A
 P 3800 1900
 F 0 "U2" H 4000 2350 60  0000 C CNN
@@ -70,52 +106,52 @@ F 3 "" H 3800 1900 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L weerstasie-rescue:C_Small C7
+L C_Small C7
 U 1 1 5B6AF612
 P 2850 1400
 F 0 "C7" H 2860 1470 50  0000 L CNN
 F 1 "1pF" H 2860 1320 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2850 1400 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2850 1400 50  0001 C CNN
 F 3 "" H 2850 1400 50  0001 C CNN
 	1    2850 1400
 	-1   0    0    1   
 $EndComp
 $Comp
-L weerstasie-rescue:L_Small L1
+L L_Small L1
 U 1 1 5B6AF6B3
 P 2600 1250
 F 0 "L1" H 2630 1290 50  0000 L CNN
 F 1 "12nH" H 2630 1210 50  0000 L CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" H 2600 1250 50  0001 C CNN
+F 2 "Inductors_SMD:L_0805" H 2600 1250 50  0001 C CNN
 F 3 "" H 2600 1250 50  0001 C CNN
 	1    2600 1250
 	0    -1   -1   0   
 $EndComp
 $Comp
-L weerstasie-rescue:L_Small L2
+L L_Small L2
 U 1 1 5B6AF732
 P 2600 1550
 F 0 "L2" H 2630 1590 50  0000 L CNN
 F 1 "NA" H 2630 1510 50  0000 L CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" H 2600 1550 50  0001 C CNN
+F 2 "Inductors_SMD:L_0805" H 2600 1550 50  0001 C CNN
 F 3 "" H 2600 1550 50  0001 C CNN
 	1    2600 1550
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2700 1550 2850 1550
+	2700 1550 3300 1550
 Wire Wire Line
 	2850 1550 2850 1500
 Connection ~ 2850 1550
 Wire Wire Line
-	2850 1000 2850 1250
+	2850 1000 2850 1300
 Wire Wire Line
 	2850 1250 2700 1250
 Wire Wire Line
-	2500 1250 2500 1550
+	2500 1250 2500 1600
 Connection ~ 2500 1550
 $Comp
-L power:GND #PWR01
+L GND #PWR01
 U 1 1 5B6AF9FF
 P 2500 1600
 F 0 "#PWR01" H 2500 1350 50  0001 C CNN
@@ -126,7 +162,7 @@ F 3 "" H 2500 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L weerstasie-rescue:Antenna AE1
+L Antenna AE1
 U 1 1 5B6AFCB7
 P 2850 800
 F 0 "AE1" H 2775 875 50  0000 R CNN
@@ -138,7 +174,7 @@ F 3 "" H 2850 800 50  0001 C CNN
 $EndComp
 Connection ~ 2850 1250
 $Comp
-L DeeComponents:BME280 U1
+L BME280 U1
 U 1 1 5B6BF707
 P 3350 3200
 F 0 "U1" H 3350 3250 60  0000 C CNN
@@ -153,7 +189,7 @@ WIND_DIR
 Text Label 3000 5650 3    60   ~ 0
 WIND_SPEED
 $Comp
-L power:GND #PWR02
+L GND #PWR02
 U 1 1 5B712789
 P 3100 5650
 F 0 "#PWR02" H 3100 5400 50  0001 C CNN
@@ -164,7 +200,7 @@ F 3 "" H 3100 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
+L GND #PWR03
 U 1 1 5B7127B1
 P 3200 5650
 F 0 "#PWR03" H 3200 5400 50  0001 C CNN
@@ -175,7 +211,7 @@ F 3 "" H 3200 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
+L GND #PWR04
 U 1 1 5B71285B
 P 4350 5650
 F 0 "#PWR04" H 4350 5400 50  0001 C CNN
@@ -190,29 +226,29 @@ RAIN
 Text Label 800  5950 2    60   ~ 0
 RAIN
 $Comp
-L weerstasie-rescue:R R1
+L R R1
 U 1 1 5B712A84
 P 800 5800
 F 0 "R1" V 880 5800 50  0000 C CNN
 F 1 "10k" V 800 5800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 730 5800 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805" V 730 5800 50  0001 C CNN
 F 3 "" H 800 5800 50  0001 C CNN
 	1    800  5800
 	1    0    0    -1  
 $EndComp
 $Comp
-L weerstasie-rescue:C C1
+L C C1
 U 1 1 5B712AEF
 P 800 6100
 F 0 "C1" H 825 6200 50  0000 L CNN
 F 1 "100n" H 825 6000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 838 5950 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 838 5950 50  0001 C CNN
 F 3 "" H 800 6100 50  0001 C CNN
 	1    800  6100
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR05
+L GND #PWR05
 U 1 1 5B712B4A
 P 800 6350
 F 0 "#PWR05" H 800 6100 50  0001 C CNN
@@ -223,7 +259,7 @@ F 3 "" H 800 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR06
+L VCC #PWR06
 U 1 1 5B712C9A
 P 800 5550
 F 0 "#PWR06" H 800 5400 50  0001 C CNN
@@ -236,12 +272,12 @@ $EndComp
 Text Label 1350 5950 2    60   ~ 0
 WIND_DIR
 $Comp
-L weerstasie-rescue:R R2
+L R R2
 U 1 1 5B712D3C
 P 1350 5800
 F 0 "R2" V 1430 5800 50  0000 C CNN
 F 1 "10k" V 1350 5800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1280 5800 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805" V 1280 5800 50  0001 C CNN
 F 3 "" H 1350 5800 50  0001 C CNN
 	1    1350 5800
 	1    0    0    -1  
@@ -249,31 +285,31 @@ $EndComp
 Text Label 2000 5950 2    60   ~ 0
 WIND_SPEED
 $Comp
-L weerstasie-rescue:C C3
+L C C3
 U 1 1 5B712E03
 P 2000 6100
 F 0 "C3" H 2025 6200 50  0000 L CNN
 F 1 "100n" H 2025 6000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2038 5950 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2038 5950 50  0001 C CNN
 F 3 "" H 2000 6100 50  0001 C CNN
 	1    2000 6100
 	1    0    0    -1  
 $EndComp
 $Comp
-L weerstasie-rescue:R R3
+L R R3
 U 1 1 5B712E56
 P 2000 5800
 F 0 "R3" V 2080 5800 50  0000 C CNN
 F 1 "10k" V 2000 5800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1930 5800 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805" V 1930 5800 50  0001 C CNN
 F 3 "" H 2000 5800 50  0001 C CNN
 	1    2000 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	800  5550 800  5600
+	800  5550 800  5650
 Wire Wire Line
-	800  5600 1350 5600
+	800  5600 2000 5600
 Wire Wire Line
 	2000 5600 2000 5650
 Connection ~ 800  5600
@@ -283,9 +319,9 @@ Connection ~ 1350 5600
 Wire Wire Line
 	2000 6300 2000 6250
 Wire Wire Line
-	800  6300 1350 6300
+	800  6300 2000 6300
 Wire Wire Line
-	800  6250 800  6300
+	800  6250 800  6350
 Connection ~ 800  6300
 Text Label 9100 4850 0    60   ~ 0
 RAIN
@@ -294,12 +330,12 @@ WIND_DIR
 Text Label 9100 4750 0    60   ~ 0
 WIND_SPEED
 $Comp
-L weerstasie-rescue:C C2
+L C C2
 U 1 1 5B730949
 P 1350 6100
 F 0 "C2" H 1375 6200 50  0000 L CNN
 F 1 "100n" H 1375 6000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1388 5950 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 1388 5950 50  0001 C CNN
 F 3 "" H 1350 6100 50  0001 C CNN
 	1    1350 6100
 	1    0    0    -1  
@@ -308,7 +344,7 @@ Wire Wire Line
 	1350 6250 1350 6300
 Connection ~ 1350 6300
 $Comp
-L weerstasie-rescue:ATMEGA1284P-AU U3
+L ATMEGA1284P-AU U3
 U 1 1 5B730A8A
 P 8100 3550
 F 0 "U3" H 7250 5430 50  0000 L BNN
@@ -347,7 +383,7 @@ MISO
 Text Label 4150 3600 0    60   ~ 0
 SCK
 $Comp
-L power:VCC #PWR07
+L VCC #PWR07
 U 1 1 5B7316A5
 P 2950 3200
 F 0 "#PWR07" H 2950 3050 50  0001 C CNN
@@ -358,7 +394,7 @@ F 3 "" H 2950 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR08
+L GND #PWR08
 U 1 1 5B73172C
 P 3150 3400
 F 0 "#PWR08" H 3150 3150 50  0001 C CNN
@@ -369,7 +405,7 @@ F 3 "" H 3150 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR09
+L GND #PWR09
 U 1 1 5B731762
 P 4150 3300
 F 0 "#PWR09" H 4150 3050 50  0001 C CNN
@@ -380,18 +416,18 @@ F 3 "" H 4150 3300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L weerstasie-rescue:C_Small C6
+L C_Small C6
 U 1 1 5B7317FB
 P 2750 3400
 F 0 "C6" H 2760 3470 50  0000 L CNN
 F 1 "100n" H 2760 3320 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2750 3400 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2750 3400 50  0001 C CNN
 F 3 "" H 2750 3400 50  0001 C CNN
 	1    2750 3400
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR010
+L GND #PWR010
 U 1 1 5B731955
 P 2650 3400
 F 0 "#PWR010" H 2650 3150 50  0001 C CNN
@@ -402,7 +438,7 @@ F 3 "" H 2650 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR011
+L GND #PWR011
 U 1 1 5B731A1D
 P 4300 2250
 F 0 "#PWR011" H 4300 2000 50  0001 C CNN
@@ -413,7 +449,7 @@ F 3 "" H 4300 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR012
+L GND #PWR012
 U 1 1 5B731A55
 P 4300 1550
 F 0 "#PWR012" H 4300 1300 50  0001 C CNN
@@ -424,7 +460,7 @@ F 3 "" H 4300 1550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR013
+L GND #PWR013
 U 1 1 5B731A8D
 P 3300 1650
 F 0 "#PWR013" H 3300 1400 50  0001 C CNN
@@ -435,7 +471,7 @@ F 3 "" H 3300 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR014
+L VCC #PWR014
 U 1 1 5B731AD5
 P 2450 1950
 F 0 "#PWR014" H 2450 1800 50  0001 C CNN
@@ -461,7 +497,7 @@ RFM_D1
 Text Label 9100 4050 0    60   ~ 0
 RFM_D2
 $Comp
-L weerstasie-rescue:Crystal Y1
+L Crystal Y1
 U 1 1 5B732041
 P 6850 2450
 F 0 "Y1" H 6850 2600 50  0000 C CNN
@@ -474,31 +510,31 @@ $EndComp
 Wire Wire Line
 	6850 2300 6850 2250
 Wire Wire Line
-	6700 2250 6850 2250
+	6700 2250 7100 2250
 Wire Wire Line
 	6850 2600 6850 2650
 Wire Wire Line
-	6700 2650 6850 2650
+	6700 2650 7100 2650
 Connection ~ 6850 2250
 Connection ~ 6850 2650
 $Comp
-L weerstasie-rescue:C_Small C8
+L C_Small C8
 U 1 1 5B7321E1
 P 6600 2250
 F 0 "C8" H 6610 2320 50  0000 L CNN
 F 1 "22p" H 6610 2170 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6600 2250 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 6600 2250 50  0001 C CNN
 F 3 "" H 6600 2250 50  0001 C CNN
 	1    6600 2250
 	0    1    1    0   
 $EndComp
 $Comp
-L weerstasie-rescue:C_Small C9
+L C_Small C9
 U 1 1 5B732240
 P 6600 2650
 F 0 "C9" H 6610 2720 50  0000 L CNN
 F 1 "22p" H 6610 2570 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6600 2650 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 6600 2650 50  0001 C CNN
 F 3 "" H 6600 2650 50  0001 C CNN
 	1    6600 2650
 	0    1    1    0   
@@ -510,7 +546,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 2650 6500 2650
 $Comp
-L power:GND #PWR015
+L GND #PWR015
 U 1 1 5B7322CD
 P 6400 2650
 F 0 "#PWR015" H 6400 2400 50  0001 C CNN
@@ -521,7 +557,7 @@ F 3 "" H 6400 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L GND #PWR016
 U 1 1 5B7323F2
 P 7800 5750
 F 0 "#PWR016" H 7800 5500 50  0001 C CNN
@@ -534,55 +570,55 @@ $EndComp
 Wire Wire Line
 	7800 5750 7800 5550
 Wire Wire Line
-	7800 5550 7900 5550
+	7800 5550 8100 5550
 Connection ~ 7900 5550
 Connection ~ 8000 5550
 $Comp
-L weerstasie-rescue:C_Small C12
+L C_Small C12
 U 1 1 5B7326A0
 P 7500 1100
 F 0 "C12" H 7510 1170 50  0000 L CNN
 F 1 "100nF" H 7510 1020 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7500 1100 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 7500 1100 50  0001 C CNN
 F 3 "" H 7500 1100 50  0001 C CNN
 	1    7500 1100
 	-1   0    0    1   
 $EndComp
 $Comp
-L weerstasie-rescue:C_Small C13
+L C_Small C13
 U 1 1 5B732722
 P 7800 1100
 F 0 "C13" H 7810 1170 50  0000 L CNN
 F 1 "100nF" H 7810 1020 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7800 1100 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 7800 1100 50  0001 C CNN
 F 3 "" H 7800 1100 50  0001 C CNN
 	1    7800 1100
 	-1   0    0    1   
 $EndComp
 $Comp
-L weerstasie-rescue:C_Small C14
+L C_Small C14
 U 1 1 5B73277D
 P 8100 1100
 F 0 "C14" H 8110 1170 50  0000 L CNN
 F 1 "100nF" H 8110 1020 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8100 1100 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 8100 1100 50  0001 C CNN
 F 3 "" H 8100 1100 50  0001 C CNN
 	1    8100 1100
 	-1   0    0    1   
 $EndComp
 $Comp
-L weerstasie-rescue:C_Small C15
+L C_Small C15
 U 1 1 5B73282D
 P 8400 1100
 F 0 "C15" H 8410 1170 50  0000 L CNN
 F 1 "100nF" H 8410 1020 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8400 1100 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 8400 1100 50  0001 C CNN
 F 3 "" H 8400 1100 50  0001 C CNN
 	1    8400 1100
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR017
+L GND #PWR017
 U 1 1 5B732B5E
 P 8450 900
 F 0 "#PWR017" H 8450 650 50  0001 C CNN
@@ -593,7 +629,7 @@ F 3 "" H 8450 900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:VCC #PWR018
+L VCC #PWR018
 U 1 1 5B8316AE
 P 8550 1400
 F 0 "#PWR018" H 8550 1250 50  0001 C CNN
@@ -604,7 +640,7 @@ F 3 "" H 8550 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L weerstasie-rescue:SW_Push SW1
+L SW_Push SW1
 U 1 1 5B8329CA
 P 6650 1850
 F 0 "SW1" H 6700 1950 50  0000 L CNN
@@ -615,9 +651,9 @@ F 3 "" H 6650 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 1850 6950 1850
+	6850 1850 7100 1850
 $Comp
-L power:GND #PWR019
+L GND #PWR019
 U 1 1 5B832AD4
 P 6300 1900
 F 0 "#PWR019" H 6300 1650 50  0001 C CNN
@@ -632,18 +668,18 @@ Wire Wire Line
 Wire Wire Line
 	6300 1850 6450 1850
 $Comp
-L weerstasie-rescue:R R4
+L R R4
 U 1 1 5B832B7A
 P 6950 1600
 F 0 "R4" V 7030 1600 50  0000 C CNN
 F 1 "10k" V 6950 1600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6880 1600 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805" V 6880 1600 50  0001 C CNN
 F 3 "" H 6950 1600 50  0001 C CNN
 	1    6950 1600
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR020
+L VCC #PWR020
 U 1 1 5B832BFB
 P 6950 1350
 F 0 "#PWR020" H 6950 1200 50  0001 C CNN
@@ -659,12 +695,12 @@ Wire Wire Line
 	6950 1750 6950 1850
 Connection ~ 6950 1850
 $Comp
-L weerstasie-rescue:C_Small C10
+L C_Small C10
 U 1 1 5B832DC6
 P 6900 3200
 F 0 "C10" H 6910 3270 50  0000 L CNN
 F 1 "100nF" H 6910 3120 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6900 3200 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 6900 3200 50  0001 C CNN
 F 3 "" H 6900 3200 50  0001 C CNN
 	1    6900 3200
 	1    0    0    -1  
@@ -674,7 +710,7 @@ Wire Wire Line
 Wire Wire Line
 	6900 3050 7100 3050
 $Comp
-L power:GND #PWR021
+L GND #PWR021
 U 1 1 5B832EAA
 P 6900 3350
 F 0 "#PWR021" H 6900 3100 50  0001 C CNN
@@ -687,7 +723,7 @@ $EndComp
 Wire Wire Line
 	6900 3350 6900 3300
 $Comp
-L power:VCC #PWR022
+L VCC #PWR022
 U 1 1 5B833E18
 P 9850 950
 F 0 "#PWR022" H 9850 800 50  0001 C CNN
@@ -698,7 +734,7 @@ F 3 "" H 9850 950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR023
+L GND #PWR023
 U 1 1 5B833E7D
 P 9850 1350
 F 0 "#PWR023" H 9850 1100 50  0001 C CNN
@@ -721,11 +757,11 @@ RESET
 Wire Wire Line
 	7500 1000 7500 900 
 Wire Wire Line
-	7250 900  7500 900 
+	7250 900  8450 900 
 Wire Wire Line
-	7800 1400 7900 1400
+	7800 1400 8550 1400
 Wire Wire Line
-	8400 1200 8400 1300
+	8400 1200 8400 1400
 Connection ~ 8400 1400
 Wire Wire Line
 	8200 1550 8200 1400
@@ -739,7 +775,7 @@ Connection ~ 7900 1400
 Wire Wire Line
 	7500 1200 7500 1300
 Wire Wire Line
-	7250 1300 7500 1300
+	7250 1300 8400 1300
 Connection ~ 8400 1300
 Wire Wire Line
 	8100 1200 8100 1300
@@ -757,7 +793,7 @@ Wire Wire Line
 	8400 1000 8400 900 
 Connection ~ 8400 900 
 $Comp
-L power:GND #PWR024
+L GND #PWR024
 U 1 1 5B83592B
 P 3250 6850
 F 0 "#PWR024" H 3250 6600 50  0001 C CNN
@@ -768,7 +804,7 @@ F 3 "" H 3250 6850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:VCC #PWR025
+L VCC #PWR025
 U 1 1 5B835CF6
 P 4150 6850
 F 0 "#PWR025" H 4150 6700 50  0001 C CNN
@@ -783,18 +819,18 @@ RFM_RESET
 Wire Wire Line
 	7800 1400 7800 1550
 $Comp
-L weerstasie-rescue:C_Small C5
+L C_Small C5
 U 1 1 5B8393B6
 P 2650 2100
 F 0 "C5" H 2660 2170 50  0000 L CNN
 F 1 "100n" H 2660 2020 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2650 2100 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2650 2100 50  0001 C CNN
 F 3 "" H 2650 2100 50  0001 C CNN
 	1    2650 2100
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR026
+L GND #PWR026
 U 1 1 5B8395AF
 P 2600 2350
 F 0 "#PWR026" H 2600 2100 50  0001 C CNN
@@ -821,7 +857,7 @@ Wire Wire Line
 Wire Wire Line
 	4050 6250 4700 6250
 $Comp
-L weerstasie-rescue:Conn_01x02 J13
+L Conn_01x02 J13
 U 1 1 5B83A37C
 P 10650 4550
 F 0 "J13" H 10650 4650 50  0000 C CNN
@@ -852,7 +888,7 @@ SOLAR_5
 Text Label 9100 2150 0    60   ~ 0
 SOLAR_6
 $Comp
-L weerstasie-rescue:Conn_01x02 J12
+L Conn_01x02 J12
 U 1 1 5B83CFC8
 P 10650 3650
 F 0 "J12" H 10650 3750 50  0000 C CNN
@@ -867,7 +903,7 @@ Wire Wire Line
 Wire Wire Line
 	9100 3750 10450 3750
 $Comp
-L weerstasie-rescue:Conn_01x01 J11
+L Conn_01x01 J11
 U 1 1 5B83E4F7
 P 10650 2950
 F 0 "J11" H 10650 3050 50  0000 C CNN
@@ -880,7 +916,7 @@ $EndComp
 Wire Wire Line
 	9100 2950 10450 2950
 Wire Wire Line
-	2450 1950 2500 1950
+	2450 1950 3300 1950
 Wire Wire Line
 	2650 2000 2650 1950
 Connection ~ 2650 1950
@@ -892,7 +928,7 @@ NoConn ~ 9100 2050
 Wire Wire Line
 	2950 3500 3150 3500
 Wire Wire Line
-	2950 3200 2950 3300
+	2950 3200 2950 3500
 Wire Wire Line
 	2850 3400 2950 3400
 Connection ~ 2950 3400
@@ -904,7 +940,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 6900 3250 6850
 $Comp
-L power:GND #PWR027
+L GND #PWR027
 U 1 1 5B8408D8
 P 4850 4950
 F 0 "#PWR027" H 4850 4700 50  0001 C CNN
@@ -917,12 +953,12 @@ $EndComp
 Wire Wire Line
 	4750 4800 4850 4800
 Wire Wire Line
-	4850 4800 4850 4900
+	4850 4800 4850 4950
 Wire Wire Line
 	4750 4900 4850 4900
 Connection ~ 4850 4900
 $Comp
-L power:GND #PWR028
+L GND #PWR028
 U 1 1 5B840A64
 P 3600 4950
 F 0 "#PWR028" H 3600 4700 50  0001 C CNN
@@ -935,7 +971,7 @@ $EndComp
 Wire Wire Line
 	3500 4800 3600 4800
 Wire Wire Line
-	3600 4800 3600 4900
+	3600 4800 3600 4950
 Wire Wire Line
 	3500 4900 3600 4900
 Connection ~ 3600 4900
@@ -949,7 +985,7 @@ NoConn ~ 9100 4950
 NoConn ~ 9100 5050
 NoConn ~ 9100 5150
 $Comp
-L weerstasie-rescue:LED D1
+L LED D1
 U 1 1 5B884D9C
 P 9450 5250
 F 0 "D1" H 9450 5350 50  0000 C CNN
@@ -960,18 +996,18 @@ F 3 "" H 9450 5250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L weerstasie-rescue:R R5
+L R R5
 U 1 1 5B884E23
 P 9900 5250
 F 0 "R5" V 9980 5250 50  0000 C CNN
-F 1 "10k" V 9900 5250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 9830 5250 50  0001 C CNN
+F 1 "200?" V 9900 5250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9830 5250 50  0001 C CNN
 F 3 "" H 9900 5250 50  0001 C CNN
 	1    9900 5250
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR029
+L GND #PWR029
 U 1 1 5B884EB0
 P 10250 5300
 F 0 "#PWR029" H 10250 5050 50  0001 C CNN
@@ -990,7 +1026,7 @@ Wire Wire Line
 Wire Wire Line
 	10250 5250 10250 5300
 $Comp
-L weerstasie-rescue:Conn_01x01 J5
+L Conn_01x01 J5
 U 1 1 5B887629
 P 10050 850
 F 0 "J5" H 10050 950 50  0000 C CNN
@@ -1001,7 +1037,7 @@ F 3 "" H 10050 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L weerstasie-rescue:Conn_01x01 J6
+L Conn_01x01 J6
 U 1 1 5B88768C
 P 10050 950
 F 0 "J6" H 10050 1050 50  0000 C CNN
@@ -1012,7 +1048,7 @@ F 3 "" H 10050 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L weerstasie-rescue:Conn_01x01 J7
+L Conn_01x01 J7
 U 1 1 5B8876F5
 P 10050 1050
 F 0 "J7" H 10050 1150 50  0000 C CNN
@@ -1023,7 +1059,7 @@ F 3 "" H 10050 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L weerstasie-rescue:Conn_01x01 J8
+L Conn_01x01 J8
 U 1 1 5B88775A
 P 10050 1150
 F 0 "J8" H 10050 1250 50  0000 C CNN
@@ -1034,7 +1070,7 @@ F 3 "" H 10050 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L weerstasie-rescue:Conn_01x01 J9
+L Conn_01x01 J9
 U 1 1 5B8877C1
 P 10050 1250
 F 0 "J9" H 10050 1350 50  0000 C CNN
@@ -1045,7 +1081,7 @@ F 3 "" H 10050 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L weerstasie-rescue:Conn_01x01 J10
+L Conn_01x01 J10
 U 1 1 5B88782C
 P 10050 1350
 F 0 "J10" H 10050 1450 50  0000 C CNN
@@ -1056,12 +1092,12 @@ F 3 "" H 10050 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L weerstasie-rescue:C_Small C11
+L C_Small C11
 U 1 1 5B8A4CC9
 P 7250 1100
 F 0 "C11" H 7260 1170 50  0000 L CNN
 F 1 "10uF" H 7260 1020 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7250 1100 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 7250 1100 50  0001 C CNN
 F 3 "" H 7250 1100 50  0001 C CNN
 	1    7250 1100
 	-1   0    0    1   
@@ -1073,12 +1109,12 @@ Wire Wire Line
 	7250 1000 7250 900 
 Connection ~ 7500 900 
 $Comp
-L weerstasie-rescue:C_Small C4
+L C_Small C4
 U 1 1 5B8A515F
 P 2500 2100
 F 0 "C4" H 2510 2170 50  0000 L CNN
 F 1 "10uF" H 2510 2020 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2500 2100 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2500 2100 50  0001 C CNN
 F 3 "" H 2500 2100 50  0001 C CNN
 	1    2500 2100
 	1    0    0    -1  
@@ -1089,70 +1125,8 @@ Connection ~ 2500 1950
 Wire Wire Line
 	2500 2200 2500 2250
 Wire Wire Line
-	2500 2250 2600 2250
+	2500 2250 2650 2250
 Wire Wire Line
 	2600 2350 2600 2250
 Connection ~ 2600 2250
-Wire Wire Line
-	2850 1550 3300 1550
-Wire Wire Line
-	2500 1550 2500 1600
-Wire Wire Line
-	2850 1250 2850 1300
-Wire Wire Line
-	800  5600 800  5650
-Wire Wire Line
-	1350 5600 2000 5600
-Wire Wire Line
-	800  6300 800  6350
-Wire Wire Line
-	1350 6300 2000 6300
-Wire Wire Line
-	6850 2250 7100 2250
-Wire Wire Line
-	6850 2650 7100 2650
-Wire Wire Line
-	7900 5550 8000 5550
-Wire Wire Line
-	8000 5550 8100 5550
-Wire Wire Line
-	6950 1850 7100 1850
-Wire Wire Line
-	8400 1400 8550 1400
-Wire Wire Line
-	8200 1400 8400 1400
-Wire Wire Line
-	8000 1400 8200 1400
-Wire Wire Line
-	7900 1400 8000 1400
-Wire Wire Line
-	8400 1300 8400 1400
-Wire Wire Line
-	8100 1300 8400 1300
-Wire Wire Line
-	7800 1300 8100 1300
-Wire Wire Line
-	7800 900  8100 900 
-Wire Wire Line
-	8100 900  8400 900 
-Wire Wire Line
-	8400 900  8450 900 
-Wire Wire Line
-	2650 1950 3300 1950
-Wire Wire Line
-	2950 3400 2950 3500
-Wire Wire Line
-	2950 3300 2950 3400
-Wire Wire Line
-	4850 4900 4850 4950
-Wire Wire Line
-	3600 4900 3600 4950
-Wire Wire Line
-	7500 1300 7800 1300
-Wire Wire Line
-	7500 900  7800 900 
-Wire Wire Line
-	2500 1950 2650 1950
-Wire Wire Line
-	2600 2250 2650 2250
 $EndSCHEMATC

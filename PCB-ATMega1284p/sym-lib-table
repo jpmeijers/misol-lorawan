@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name weerstasie-rescue)(type Legacy)(uri ${KIPRJMOD}/weerstasie-rescue.lib)(options "")(descr ""))
+  (lib (name drawn_by_jpmeijers)(type Legacy)(uri ${KIPRJMOD}/libraries/drawn_by_jpmeijers.lib)(options "")(descr ""))
+  (lib (name bb-ch340t)(type Legacy)(uri ${KIPRJMOD}/libraries/w-dee/components/bb-ch340t.lib)(options "")(descr ""))
+  (lib (name DeeComponents)(type Legacy)(uri ${KIPRJMOD}/libraries/w-dee/components/DeeComponents.lib)(options "")(descr ""))
+  (lib (name wroom-02)(type Legacy)(uri ${KIPRJMOD}/libraries/w-dee/components/wroom-02.lib)(options "")(descr ""))
+)

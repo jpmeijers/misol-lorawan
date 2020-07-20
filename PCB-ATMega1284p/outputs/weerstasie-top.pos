@@ -1,0 +1,24 @@
+### Module positions - created on Mon Jul 20 11:42:25 2020 ###
+### Printed by Pcbnew version kicad 5.1.6-c6e7f7d~87~ubuntu20.04.1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val             Package                               PosX       PosY       Rot  Side
+C1        100n            C_0805_2012Metric                 122.5804  -105.7148    0.0000  top
+C2        100n            C_0805_2012Metric                 104.0384  -106.0196  180.0000  top
+C3        100n            C_0805_2012Metric                 107.5436  -106.0196  180.0000  top
+C4        10u             C_0805_2012Metric                 125.9840   -68.3768  180.0000  top
+C6        100n            C_0805_2012Metric                 115.8240   -76.2508   90.0000  top
+C7        1pF             C_0805_2012Metric                 116.0000   -65.0000  180.0000  top
+C8        22p             C_0805_2012Metric                 113.6627   -91.1860  180.0000  top
+C9        22p             C_0805_2012Metric                 112.1664   -99.4941  270.0000  top
+C11       10u             C_0805_2012Metric                 129.4661  -127.9144    0.0000  top
+C12       100n            C_0805_2012Metric                 125.9840   -66.8528  180.0000  top
+C15       100n            C_0805_2012Metric                 127.3048   -85.9028    0.0000  top
+L1        12nH            L_0805_2012Metric                 113.7920   -64.0080  270.0000  top
+L2        NA              L_0805_2012Metric                 118.2116   -66.2432   90.0000  top
+R1        10k             R_0805_2012Metric                 118.8720  -105.7148    0.0000  top
+R2        10k             R_0805_2012Metric                 104.0384  -104.0892    0.0000  top
+R3        10k             R_0805_2012Metric                 111.7092  -105.4100   90.0000  top
+U3        ATMEGA1284P-AU  TQFP-44_10x10mm_Pitch0.8mm        125.0000   -94.0000    0.0000  top
+Y1        Crystal_GND24   Crystal_SMD_5032-4Pin_5.0x3.2mm   114.3160   -94.9960   90.0000  top
+## End

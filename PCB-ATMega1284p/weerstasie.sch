@@ -41,7 +41,7 @@ U 1 1 5B6ADACC
 P 3000 5200
 F 0 "J1" H 3200 5700 50  0000 C CNN
 F 1 "WIND" H 2850 5700 50  0000 C CNN
-F 2 "drawn_by_jpmeijers:SPARKFUN_RJ11-6" H 3000 5200 50  0001 C CNN
+F 2 "drawn_by_jpmeijers:TE_Connectivity_5520425-3" H 3000 5200 50  0001 C CNN
 F 3 "" H 3000 5200 50  0001 C CNN
 	1    3000 5200
 	1    0    0    -1  
@@ -52,7 +52,7 @@ U 1 1 5B6ADB89
 P 4250 5200
 F 0 "J4" H 4450 5700 50  0000 C CNN
 F 1 "RAIN" H 4100 5700 50  0000 C CNN
-F 2 "drawn_by_jpmeijers:SPARKFUN_RJ11-6" H 4250 5200 50  0001 C CNN
+F 2 "drawn_by_jpmeijers:TE_Connectivity_5520425-3" H 4250 5200 50  0001 C CNN
 F 3 "" H 4250 5200 50  0001 C CNN
 	1    4250 5200
 	1    0    0    -1  
@@ -592,34 +592,6 @@ F 3 "" H 8550 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L weerstasie-rescue:SW_Push SW1
-U 1 1 5B8329CA
-P 6650 1850
-F 0 "SW1" H 6700 1950 50  0000 L CNN
-F 1 "SW_Push" H 6650 1790 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 6650 2050 50  0001 C CNN
-F 3 "" H 6650 2050 50  0001 C CNN
-	1    6650 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6850 1850 6950 1850
-$Comp
-L weerstasie-rescue:GND-power #PWR019
-U 1 1 5B832AD4
-P 6300 1900
-F 0 "#PWR019" H 6300 1650 50  0001 C CNN
-F 1 "GND" H 6300 1750 50  0000 C CNN
-F 2 "" H 6300 1900 50  0001 C CNN
-F 3 "" H 6300 1900 50  0001 C CNN
-	1    6300 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6300 1900 6300 1850
-Wire Wire Line
-	6300 1850 6450 1850
-$Comp
 L weerstasie-rescue:R R4
 U 1 1 5B832B7A
 P 6950 1600
@@ -645,7 +617,6 @@ Wire Wire Line
 	6950 1450 6950 1350
 Wire Wire Line
 	6950 1750 6950 1850
-Connection ~ 6950 1850
 $Comp
 L weerstasie-rescue:C_Small C10
 U 1 1 5B832DC6
@@ -703,8 +674,6 @@ MISO
 Text Label 9850 1050 2    60   ~ 0
 SCK
 Text Label 9850 1250 2    60   ~ 0
-RESET
-Text Label 6850 1850 0    60   ~ 0
 RESET
 Wire Wire Line
 	7500 1000 7500 900 
@@ -1133,7 +1102,7 @@ U 1 1 5F13D48A
 P 6850 2450
 F 0 "Y1" V 7150 2650 50  0000 R CNN
 F 1 "Crystal_GND24" V 7100 2650 50  0000 R CNN
-F 2 "Crystal:Crystal_SMD_0603-4Pin_6.0x3.5mm" H 6850 2450 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_5032-4Pin_5.0x3.2mm" H 6850 2450 50  0001 C CNN
 F 3 "~" H 6850 2450 50  0001 C CNN
 	1    6850 2450
 	0    -1   -1   0   
@@ -1185,4 +1154,6 @@ Text Label 4700 6250 0    50   ~ 0
 UART_RX
 Text Label 4700 6150 0    50   ~ 0
 UART_TX
+Text Label 6950 1850 0    60   ~ 0
+RESET
 $EndSCHEMATC
